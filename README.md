@@ -34,6 +34,6 @@ Criar um projeto Nodejs utilizando Mongoose e Express.
 
 Fazer Pull Request para esse repositório. (Se possivel subir aplicação no https://www.heroku.com)
 
-## Contato
+## Contato:
 robson@transformacaodigital.com
 
