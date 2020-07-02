@@ -11,11 +11,11 @@ Criar um projeto Nodejs utilizando Mongoose e Express.
 {
     "items": [
         {
-            "id": "5eefd2a5de61ac7e2e66cdd8",
+            "_id": "5eefd2a5de61ac7e2e66cdd8",
             "name "Doogg",
             "person": {
                 "name": "Robson",
-                "id": "5eefd2a5de61ac7e2e66cdd4"
+                "_id": "5eefd2a5de61ac7e2e66cdd4"
             }
         },
         ...
