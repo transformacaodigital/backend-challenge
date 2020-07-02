@@ -35,6 +35,6 @@ Criar um projeto Nodejs utilizando Mongoose e Express.
 
 ## Publicação:
 
-Publicar no github e enviar por email. (Se possivel subir aplicação no https://www.heroku.com)
+Fazer Pull Request para esse repositório. (Se possivel subir aplicação no https://www.heroku.com)
 robson@transformacaodigital.com
 
