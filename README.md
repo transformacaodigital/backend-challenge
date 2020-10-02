@@ -28,6 +28,15 @@ query {
       }
     }
   }
+  
+  collectionSingular(id: "ObjectId") {
+    id
+    name
+    relatedCollection {
+      id
+      name
+    }
+  }
 }
 ```
 
