@@ -1,6 +1,6 @@
-# Back End Challenge
+﻿# Back End Challenge
 
-Criar um projeto Nodejs utilizando Mongoose e Apollo Server (Graphql).
+Criar um projeto Nodejs utilizando Mongoose e Apollo Server (Graphql)
 
 
 ## Projeto:
