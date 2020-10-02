@@ -1,32 +1,61 @@
 # Back End Challenge
 
-Criar um projeto Nodejs utilizando Mongoose e Express.
+Criar um projeto Nodejs utilizando Mongoose e Apollo Server (Graphql).
 
 
 ## Projeto:
 
-* Criar uma aplicação simples com duas collections (podendo ser Teacher e Student, Person e Pet, ou qualquer outra relação entre duas entidades)
-* Implementar todos os métodos de API: C/R/U/D 
+* Criar uma aplicação simples com duas collection (podendo ser Teacher e Student, Person e Pet, ou qualquer outra relação entre duas entidades)
+
+* Implementar queries collectionPlural (multiplos), collectionPlural (single) de cada collection
+
 ```
-{
-    "items": [
-        {
-            "_id": "5eefd2a5de61ac7e2e66cdd8",
-            "name "Doogg",
-            "person": {
-                "name": "Robson",
-                "_id": "5eefd2a5de61ac7e2e66cdd4"
-            }
-        },
-        ...
-    ],
-    meta: {
-      total: 100,
-      page: 1
+query {
+  collectionPlural(first: 50, after: "$endCursor para paginação") {
+    totalCount
+    pageInfo {
+      hasNextPage
+      endCursor
     }
+    edges {
+      node {
+        id
+        name
+        relatedCollection {
+            id
+            name
+        }
+      }
+    }
+  }
 }
 ```
-    
+
+* Implementar mutations deleteCollectionSingular, createCollectionSingular, updateCollectionSingular de cada collection
+```
+mutation {
+  deleteCollectionSingular(id: "ObjectId") {
+    id
+    success
+  }
+  createCollectionSingular(inputs: {}) {
+    id
+    name
+    relatedCollection {
+        id
+        name
+    }
+  }
+  updateCollectionSingular(id: "ObjectId", inputs: {}) {
+    id
+    name
+    relatedCollection {
+        id
+        name
+    }
+  }
+}
+```
 
 * Criar sistema de autenticação simples, utilizando Json Web Token, para restringir o acesso aos dados.
 
