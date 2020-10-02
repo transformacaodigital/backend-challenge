@@ -5,7 +5,7 @@ Criar um projeto Nodejs utilizando Mongoose e Apollo Server (Graphql).
 
 ## Projeto:
 
-* Criar uma aplicação simples com duas collection (podendo ser Teacher e Student, Person e Pet, ou qualquer outra relação entre duas entidades)
+* Criar uma aplicação simples com duas collections (podendo ser Teacher e Student, Person e Pet, ou qualquer outra relação entre duas entidades)
 
 * Implementar queries collectionPlural (multiplos), collectionPlural (single) de cada collection
 
