@@ -74,4 +74,5 @@ Fazer Pull Request para esse repositório. (Se possivel subir aplicação no htt
 
 ## Contato:
 robson@transformacaodigital.com
+rodrigo.lopes@transformacaodigital.com
 
